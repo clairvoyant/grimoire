@@ -1,4 +1,4 @@
-kata
+Grimoire
 ====
 
-small snipsets of code
+small snipsets of code 
