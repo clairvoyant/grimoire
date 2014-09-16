@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite name="InputTest" timestamp="2013-08-04T00:20:04" hostname="localhost" tests="2" failures="1" errors="0" time="0.522">
+  <properties>
+    <property name="ant.project.invoked-targets" value="junit" />
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment" />
+    <property name="sun.boot.library.path" value="/usr/lib64/jvm/java-1.7.0-openjdk-1.7.0/jre/lib/amd64" />
+    <property name="java.vm.version" value="24.0-b50" />
+    <property name="ant.library.dir" value="/usr/share/ant/lib" />
+    <property name="ant.version" value="Apache Ant(TM) version 1.8.2 compiled on January 27 2013" />
+    <property name="ant.java.version" value="1.7" />
+    <property name="java.vm.vendor" value="Oracle Corporation" />
+    <property name="java.vendor.url" value="http://java.oracle.com/" />
+    <property name="path.separator" value=":" />
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM" />
+    <property name="file.encoding.pkg" value="sun.io" />
+    <property name="user.country" value="US" />
+    <property name="sun.java.launcher" value="SUN_STANDARD" />
+    <property name="sun.os.patch.level" value="unknown" />
+    <property name="ant.file.type.Input" value="file" />
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
+    <property name="user.dir" value="/home/jrubio/dev/recipes/java/basic" />
+    <property name="java.runtime.version" value="1.7.0_40-b31" />
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment" />
+    <property name="basedir" value="/home/jrubio/dev/recipes/java/basic" />
+    <property name="java.endorsed.dirs" value="/usr/lib64/jvm/java-1.7.0-openjdk-1.7.0/jre/lib/endorsed" />
+    <property name="os.arch" value="amd64" />
+    <property name="ant.project.default-target" value="main" />
+    <property name="java.io.tmpdir" value="/tmp" />
+    <property name="ant.core.lib" value="/usr/share/java/ant.jar" />
+    <property name="line.separator" value="&#xa;" />
+    <property name="java.vm.specification.vendor" value="Oracle Corporation" />
+    <property name="os.name" value="Linux" />
+    <property name="ant.home" value="/usr/share/ant" />
+    <property name="build.dir" value="build" />
+    <property name="ant.project.name" value="Input" />
+    <property name="sun.jnu.encoding" value="UTF-8" />
+    <property name="java.library.path" value="/usr/lib64/mpi/gcc/openmpi/lib64:/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib" />
+    <property name="java.class.version" value="51.0" />
+    <property name="java.specification.name" value="Java Platform API Specification" />
+    <property name="lib.dir" value="/usr/share/java/" />
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers" />
+    <property name="os.version" value="3.7.10-1.16-desktop" />
+    <property name="ant.file" value="/home/jrubio/dev/recipes/java/basic/build.xml" />
+    <property name="user.home" value="/home/jrubio" />
+    <property name="user.timezone" value="" />
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob" />
+    <property name="ant.file.Input" value="/home/jrubio/dev/recipes/java/basic/build.xml" />
+    <property name="java.specification.version" value="1.7" />
+    <property name="file.encoding" value="UTF-8" />
+    <property name="java.class.path" value="/usr/share/java/ant-bootstrap.jar:/usr/share/java/ant-launcher.jar:/usr/share/java/ant.jar:/usr/share/java/ant/ant-junit.jar:/usr/share/java/apache-commons-daemon.jar:/usr/share/java/apache-commons-logging-adapters.jar:/usr/share/java/apache-commons-logging-api.jar:/usr/share/java/apache-commons-logging.jar:/usr/share/java/bea-stax-api-1.2.0.jar:/usr/share/java/bea-stax-api.jar:/usr/share/java/com-sun-javadoc-0.7.9.jar:/usr/share/java/com-sun-tools-doclets-Taglet-0.7.9.jar:/usr/share/java/commons-collections-3.2.jar:/usr/share/java/commons-collections-tomcat5-3.2.jar:/usr/share/java/commons-collections-tomcat5.jar:/usr/share/java/commons-collections.jar:/usr/share/java/commons-daemon.jar:/usr/share/java/commons-dbcp-1.2.2.jar:/usr/share/java/commons-dbcp-tomcat5-1.2.2.jar:/usr/share/java/commons-dbcp-tomcat5.jar:/usr/share/java/commons-dbcp.jar:/usr/share/java/commons-logging-adapters.jar:/usr/share/java/commons-logging-api.jar:/usr/share/java/commons-logging.jar:/usr/share/java/commons-pool-1.3.jar:/usr/share/java/commons-pool-tomcat5-1.3.jar:/usr/share/java/commons-pool-tomcat5.jar:/usr/share/java/commons-pool.jar:/usr/share/java/crimson-1.1.3.jar:/usr/share/java/crimson.jar:/usr/share/java/ecj.jar:/usr/share/java/eclipse-ecj.jar:/usr/share/java/el_1_0_api.jar:/usr/share/java/el_api.jar:/usr/share/java/gnu-classpath-tools-gjdoc-0.7.9.jar:/usr/share/java/hibernate_jdbc_cache.jar:/usr/share/java/jakarta-commons-collections-3.2.jar:/usr/share/java/jakarta-commons-collections-tomcat5-3.2.jar:/usr/share/java/jakarta-commons-collections-tomcat5.jar:/usr/share/java/jakarta-commons-collections.jar:/usr/share/java/jakarta-commons-dbcp-1.2.2.jar:/usr/share/java/jakarta-commons-dbcp-tomcat5-1.2.2.jar:/usr/share/java/jakarta-commons-dbcp-tomcat5.jar:/usr/share/java/jakarta-commons-dbcp.jar:/usr/share/java/jakarta-commons-pool-1.3.jar:/usr/share/java/jakarta-commons-pool-tomcat5-1.3.jar:/usr/share/java/jakarta-commons-pool-tomcat5.jar:/usr/share/java/jakarta-commons-pool.jar:/usr/share/java/jaxp_parser_impl.jar:/usr/share/java/jdtcore.jar:/usr/share/java/jline-0.9.94.jar:/usr/share/java/jline.jar:/usr/share/java/js.jar:/usr/share/java/jsp.jar:/usr/share/java/junit-3.8.2.jar:/usr/share/java/junit.jar:/usr/share/java/libgcj-4.7.jar:/usr/share/java/libgcj-tools-4.7.jar:/usr/share/java/log4j-1.2.15.jar:/usr/share/java/log4j.jar:/usr/share/java/rhino-examples.jar:/usr/share/java/rhino.jar:/usr/share/java/servlet.jar:/usr/share/java/svn-javahl.jar:/usr/share/java/tomcat-el-2.2-api.jar:/usr/share/java/tomcat-el-api.jar:/usr/share/java/tomcat-jsp-2.2-api.jar:/usr/share/java/tomcat-jsp-api.jar:/usr/share/java/tomcat-servlet-3.0-api.jar:/usr/share/java/tomcat-servlet-api.jar:/usr/share/java/tomcat/[commons-collections-tomcat5].jar:/usr/share/java/tomcat/[commons-dbcp-tomcat5].jar:/usr/share/java/tomcat/[commons-pool-tomcat5].jar:/usr/share/java/tomcat/[ecj].jar:/usr/share/java/tomcat/annotations-api.jar:/usr/share/java/tomcat/catalina-ant.jar:/usr/share/java/tomcat/catalina-ha.jar:/usr/share/java/tomcat/catalina-tribes.jar:/usr/share/java/tomcat/catalina.jar:/usr/share/java/tomcat/commons-collections.jar:/usr/share/java/tomcat/commons-dbcp.jar:/usr/share/java/tomcat/jasper-el.jar:/usr/share/java/tomcat/jasper-jdt.jar:/usr/share/java/tomcat/jasper.jar:/usr/share/java/tomcat/log4j.jar:/usr/share/java/tomcat/tomcat-api.jar:/usr/share/java/tomcat/tomcat-coyote.jar:/usr/share/java/tomcat/tomcat-el-2.2-api.jar:/usr/share/java/tomcat/tomcat-i18n-es.jar:/usr/share/java/tomcat/tomcat-i18n-fr.jar:/usr/share/java/tomcat/tomcat-i18n-ja.jar:/usr/share/java/tomcat/tomcat-jdbc.jar:/usr/share/java/tomcat/tomcat-jsp-2.2-api.jar:/usr/share/java/tomcat/tomcat-juli.jar:/usr/share/java/tomcat/tomcat-servlet-3.0-api.jar:/usr/share/java/tomcat/tomcat-util.jar:/usr/share/java/xerces-j2-2.8.1-xml-apis.jar:/usr/share/java/xerces-j2-2.8.1-xml-resolver.jar:/usr/share/java/xerces-j2-xml-apis.jar:/usr/share/java/xerces-j2-xml-resolver.jar:/usr/share/java/xml-commons-apis.jar:/usr/share/java/xml-commons-resolver.jar:/usr/share/java/xmlbeans/xbean-2.4.0.jar:/usr/share/java/xmlbeans/xbean.jar:/usr/share/java/xmlbeans/xbean_xpath-2.4.0.jar:/usr/share/java/xmlbeans/xbean_xpath.jar:/usr/share/java/xmlbeans/xmlpublic-2.4.0.jar:/usr/share/java/xmlbeans/xmlpublic.jar:/home/jrubio/dev/recipes/java/basic/build/jar/Input.jar" />
+    <property name="user.name" value="jrubio" />
+    <property name="report.dir" value="build/junitreport" />
+    <property name="java.vm.specification.version" value="1.7" />
+    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner InputTest filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.SummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/home/jrubio/dev/recipes/java/basic/TEST-InputTest.xml crashfile=/home/jrubio/dev/recipes/java/basic/junitvmwatcher5526191306807550867.properties propsfile=/home/jrubio/dev/recipes/java/basic/junit3878693240684576511.properties" />
+    <property name="sun.arch.data.model" value="64" />
+    <property name="java.home" value="/usr/lib64/jvm/java-1.7.0-openjdk-1.7.0/jre" />
+    <property name="java.specification.vendor" value="Oracle Corporation" />
+    <property name="user.language" value="en" />
+    <property name="classes.dir" value="build/classes" />
+    <property name="awt.toolkit" value="sun.awt.X11.XToolkit" />
+    <property name="java.vm.info" value="mixed mode" />
+    <property name="java.version" value="1.7.0_40" />
+    <property name="java.ext.dirs" value="/usr/lib64/jvm/java-1.7.0-openjdk-1.7.0/jre/lib/ext:/usr/java/packages/lib/ext" />
+    <property name="sun.boot.class.path" value="/usr/lib64/jvm/java-1.7.0-openjdk-1.7.0/jre/lib/resources.jar:/usr/lib64/jvm/java-1.7.0-openjdk-1.7.0/jre/lib/rt.jar:/usr/lib64/jvm/java-1.7.0-openjdk-1.7.0/jre/lib/sunrsasign.jar:/usr/lib64/jvm/java-1.7.0-openjdk-1.7.0/jre/lib/jsse.jar:/usr/lib64/jvm/java-1.7.0-openjdk-1.7.0/jre/lib/jce.jar:/usr/lib64/jvm/java-1.7.0-openjdk-1.7.0/jre/lib/charsets.jar:/usr/lib64/jvm/java-1.7.0-openjdk-1.7.0/jre/lib/netx.jar:/usr/lib64/jvm/java-1.7.0-openjdk-1.7.0/jre/lib/plugin.jar:/usr/lib64/jvm/java-1.7.0-openjdk-1.7.0/jre/lib/rhino.jar:/usr/lib64/jvm/java-1.7.0-openjdk-1.7.0/jre/lib/jfr.jar:/usr/lib64/jvm/java-1.7.0-openjdk-1.7.0/jre/classes" />
+    <property name="java.vendor" value="Oracle Corporation" />
+    <property name="file.separator" value="/" />
+    <property name="src.dir" value="src" />
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/" />
+    <property name="sun.cpu.endian" value="little" />
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle" />
+    <property name="main-class" value="Input" />
+    <property name="ant.file.type" value="file" />
+    <property name="jar.dir" value="build/jar" />
+    <property name="sun.cpu.isalist" value="" />
+  </properties>
+  <testcase name="testShallFail" classname="InputTest" time="0.034">
+    <failure message="Failing with this error message" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Failing with this error message
+	at InputTest.testShallFail(Unknown Source)
+</failure>
+  </testcase>
+  <testcase name="testDoNothing" classname="InputTest" time="0.0" />
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

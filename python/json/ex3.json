@@ -1,0 +1,9 @@
+{
+  "config": {
+                "name": "app1-rest",
+                "class": "rest",
+                "type": "server",
+                "port": 8080
+            }
+}
+

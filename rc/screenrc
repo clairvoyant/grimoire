@@ -1,0 +1,6 @@
+shell -${SHELL}
+hardstatus alwayslastline "%{yk}( %{Y}%H %{y})%=  %{wk}%?%-Lw%?%{R}(%{W}%n*%f %t%?(%u)%?%{R})%{w}%?%+Lw%?%?%= %{y}( %{Y}load: %l %{y}) (%C %A - %Y-%m-%d)"
+defscrollback 1024
+startup_message off
+hardstatus on
+hardstatus alwayslastline

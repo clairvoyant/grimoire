@@ -1,0 +1,20 @@
+
+{
+  "config": {
+        "app": [   
+            {
+                "name": "app1-rest",
+                "class": "rest",
+                "type": "server",
+                "port": 8080
+            },
+            {
+                "name": "app2-mail",
+                "class": "smtp",
+                "type": "server",
+                "port": 25
+            },
+        ]
+    }
+}
+

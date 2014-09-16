@@ -1,0 +1,19 @@
+ <project name="My Project" default="compile" basedir=".">
+
+  <property name="build.home" value="${basedir}/build"/>
+  <property name="src.home" value="${basedir}/src"/>
+  <property name="web.home" value="${basedir}/web"/>
+
+  <target name="compile" depends="prepare">
+  </target>
+
+  <target name="prepare">
+    <mkdir dir="${build.home}"/>
+    <mkdir dir="${build.home}/WEB-INF"/>
+    <mkdir dir="${build.home}/WEB-INF/classes"/>
+    <copy todir="${build.home}">
+      <fileset dir="${web.home}"/>
+    </copy>
+  </target>
+
+ </project>

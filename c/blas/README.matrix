@@ -1,0 +1,22 @@
+
+
+MATRIX ORDER
+In C, multidimensional arrays are indexed with the most rapidly changing index last: [k][j][i]. 
+In Fortran arrays, the most rapidly changing index comes first: (i,j,k). 
+
+The C and Fortran approachs are a transpose of the other.
+
+Memory layout
+
+    The matrix
+        | 1 2 3 |
+        | 4 5 6 |
+
+    In C:
+        int A[2][3] = { {1, 2, 3}, {4, 5, 6} };
+        offset = row*NUMCOLS + column
+
+
+    In Fortran:
+         1  4  2  5  3  6
+         offset = row + column*NUMROWS
