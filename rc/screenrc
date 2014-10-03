@@ -1,6 +1,4 @@
-shell -${SHELL}
-hardstatus alwayslastline "%{yk}( %{Y}%H %{y})%=  %{wk}%?%-Lw%?%{R}(%{W}%n*%f %t%?(%u)%?%{R})%{w}%?%+Lw%?%?%= %{y}( %{Y}load: %l %{y}) (%C %A - %Y-%m-%d)"
-defscrollback 1024
+hardstatus alwayslastline "%{.kW}%-w%{.B}%n %t%{-}%{=b kw}%?%+w%? %=%c %d/%m/%Y" #B&W & date&time
 startup_message off
-hardstatus on
-hardstatus alwayslastline
+defscrollback 1024
+
