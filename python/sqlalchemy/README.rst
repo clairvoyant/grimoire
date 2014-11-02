@@ -18,7 +18,7 @@ The databases used in the analysis are the usual open source ones. All of them h
 
 Methodology
 ==========
-The database model is a relationship one with foreing keys and some restrictions in the keys. 
+The database model is a relationship of tables with foreing keys and some restrictions in the keys. 
 
 Measurements are taken inserting into an empty database. Total time is aggregated anaverage over three executions. Same data is inserted each time for each database. 
 For each database, there has been measurements of
@@ -31,8 +31,10 @@ Tools
 
 During the development the tool RunPythonRun has been used in order to find hot spot.
 
-$ python -m cProfile -o load.prof ./load.py
-$ python runsnake.py load.prof
+.. code:: shell
+
+  $ python -m cProfile -o load.prof ./load.py
+  $ python runsnake.py load.prof
 
 Results
 =======
