@@ -28,9 +28,11 @@ For each database, there has been measurements of
 
 Tools
 ========
+
 During the development the tool RunPythonRun has been used in order to find hot spot.
-   $ python -m cProfile -o load.prof ./load.py
-   $ python runsnake.py load.prof
+
+$ python -m cProfile -o load.prof ./load.py
+$ python runsnake.py load.prof
 
 Results
 =======
