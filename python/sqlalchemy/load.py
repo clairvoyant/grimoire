@@ -78,6 +78,10 @@ def load_dir(session, path):
 
 
 if __name__ == "__main__":
-   engine  = model.init_engine("price.db")
+   connection_string = "sqlite:///price.db"
+   if len(sys.argv) > 1:
+      connection_string = sys.argv[1]
+      
+   engine  = model.init_engine(connection_string)
    session = model.create_session()
    load_dir(session, "data")

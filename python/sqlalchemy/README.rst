@@ -29,7 +29,7 @@ For each database, there has been measurements of
 Tools
 ========
 
-During the development the tool RunPythonRun has been used in order to find hot spot.
+During the development the tool RunPythonRun has been used in order to find performance hot spots.
 
 .. code:: shell
 

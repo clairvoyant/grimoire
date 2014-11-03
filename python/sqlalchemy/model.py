@@ -48,12 +48,12 @@ class Price(Base):
 
 
 
-def init_engine(path):
+def init_engine(connection_string='sqlite:///prices.db'):
     # TODO create the engine, it shall be "turnkey for each DB.
     # note the session initialization... It congures the "metaclass".
     
-    #engine = create_engine('sqlite:///%s' %(path), echo=True)
-    engine = create_engine('sqlite:///%s' %(path), echo=False)
+    #engine = create_engine(conn, echo=True)
+    engine = create_engine(connection_string, echo=False)
     Base.metadata.create_all(engine)
     Session.configure(bind=engine)
     return engine
