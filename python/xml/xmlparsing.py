@@ -61,13 +61,21 @@ if __name__ == "__main__":
     import sys
     from xml import sax
     from xml.sax.saxutils import XMLGenerator
+
     parser = sax.make_parser()
+
     #XMLGenerator is a special SAX handler that merely writes
     #SAX events back into an XML document
     downstream_handler = XMLGenerator()
     #upstream, the parser, downstream, the next handler in the chain
+
+    # text_normalize_filter will buffer the data until a new element is found.
+    # then will execute the "downstream" characters function. 
+    # this will avoid chunking the elements.
     filter_handler = text_normalize_filter(parser, downstream_handler)
+
     #The SAX filter base is designed so that the filter takes
     #on much of the interface of the parser itself, including the
     #"parse" method
+
     filter_handler.parse(sys.argv[1])
