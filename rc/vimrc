@@ -5,3 +5,6 @@ setlocal smarttab
 setlocal expandtab
 set nowrap
 set autoindent
+
+
+set diffopt+=iwhite
