@@ -28,7 +28,8 @@ usage(char* log)
 
 
  
-main()
+int
+main(int argc, char* argv[])
 {
     int i, j , c1, c2, pivot[size], ok;
     float A[size][size], b[size], AT[size*size];   /* single precision!!! */
@@ -64,6 +65,9 @@ main()
 
     for (j=0; j<size; j++) 
         printf("%e\n", b[j]);    /* print vector x */
+
+
+    return 0;
 }  
 
            
