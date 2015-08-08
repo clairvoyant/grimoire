@@ -5,8 +5,7 @@
 # 'make clean'  removes all .o and executable files
 #
 
-CC = c++
-CFLAGS = -Wall -g
+CXX = c++
 INCLUDES = 
 LFLAGS = -ljson
 LIBS =  -lm
@@ -22,11 +21,10 @@ all:    $(MAIN)
 	@echo $(MAIN) has been build.
 
 $(MAIN): $(OBJS) 
-	$(CC) $(CFLAGS) $(INCLUDES) -o $(MAIN) $(OBJS) $(LFLAGS) $(LIBS)
+	$(CXX) $(CFLAGS) $(INCLUDES) -o $(MAIN) $(OBJS) $(LFLAGS) $(LIBS)
 
-.c.o:
-	$(CC) $(CFLAGS) $(INCLUDES) -c $<  -o $@
-
+.cc.o:
+	$(CXX) $(CXXFLAGS) $(INCLUDES) -c $<  -o $@
 clean:
 	$(RM) *.o *~ $(MAIN)
 
