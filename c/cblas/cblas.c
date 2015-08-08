@@ -1,64 +1,6 @@
 #include <cblas.h>
 #include <stdio.h>
 
-
-/* 
- * This code is an example of blas a*b multiply.
- *   a =
- *       1   2
- *       4   5
- *       7   8
- *
- *  b =
- *
- *       1   2   3
- *       3   4   5
- *
- *  a*b =
- *
- *       7   10   13
- *       19   28   37
- *       31   46   61
- *
- */
-
-
-void print_matrix(double* M, int rows, int columns)
-{
-    int i=0;
-    int j=0;
-
-    for(i=0; i<rows; i++) {
-        for(j=0; j<columns; j++) {
-            printf(" %lf ", *M+i*rows+j);
-        }
-        printf("\n");
-    }
-    printf("\n");
-}
-
-
-int main(int argc, char* argv[])
-{
-  int m = 3;
-  int n = 3;
-  int k = 2;
-
-  /* 3x2 matrix */
-  double A[6] = {  1.0, 2.0 , 
-                   4.0, 5.0 , 
-                   7.0, 8.0  
-  };         
-
-  /* 2x3 matrix */
-  double B[6] = { 1.0,  2.0, 3.0, 
-                  3.0,  4.0, 5.0};  
-
-  double C[9] = { .5, .5, .5,
-                  .5, .5, .5,
-                  .5, .5, .5  }; 
-
-
   /***
    * gemm multiplies matrix 
    *
@@ -85,17 +27,90 @@ int main(int argc, char* argv[])
    *    op(A) is an m-by-k matrix,
    *    op(B) is a k-by-n matrix,
    *    C is an m-by-n matrix. 
+   *
+   *    lda: lenght of the row in row order and column in column order.
+   *    ldb: lenght of the row in row order and column in column order.
+   *    ldc: lenght of the row in row order and column in column order.
+   *
+   *    Take care that 
+   *        - Fortran: memory layout is usually column order. 
+   *        - C:       memory layout is usually row  order.
    */
-  
-  print_matrix(A, m, k);
-  print_matrix(B, k, n);
+ 
+/* 
+ * This code is an example of blas a*b multiply.
+ *      a =
+ *
+ *         1   2
+ *         3   4
+ *         5   6
+ *
+ *      b =
+ *
+ *         1   2   3
+ *         4   5   6
+ *
+ *      a*b =
+ *
+ *          9   12   15
+ *         19   26   33
+ *         29   40   51
+ *
+ */
 
-  cblas_dgemm(CblasRowMajor, CblasNoTrans, CblasTrans,
+
+void print_matrix(double* M, int rows, int columns)
+{
+    int     i = 0;
+    int     j = 0;
+    double* p;
+
+    for(i=0; i<rows; i++) {
+        for(j=0; j<columns; j++) {
+            p = M + i*columns+j;
+            printf(" %.3lf ", *p);
+        }
+        printf("\n");
+    }
+    printf("\n");
+}
+
+
+int main(int argc, char* argv[])
+{
+  int m = 3;
+  int n = 3;
+  int k = 2;
+
+  /* 3x2 matrix */
+  double A[6] = {  1.0, 2.0 , 
+                   3.0, 4.0 , 
+                   5.0, 6.0  
+  };         
+
+  /* 2x3 matrix */
+  double B[6] = { 1.0,  2.0, 3.0, 
+                  4.0,  5.0, 6.0};  
+
+  double C[9] = { .1, .2, .3,
+                  .4, .5, .6,
+                  .7, .8, .9  }; 
+
+
+ 
+  printf("matrix A = \n");
+  print_matrix(A, m, k);
+  printf("matrix B = \n");
+  print_matrix(B, k, n);
+  printf("matrix C = \n");
+  print_matrix(C, m, n);
+
+  cblas_dgemm(CblasRowMajor, CblasNoTrans, CblasNoTrans,
               3,3,2,  /* m, n, k */
               1, 
-                A, 3, 
+                A, 2,  
                 B, 3,
-              2,
+              1,
                 C,3
              );
 
