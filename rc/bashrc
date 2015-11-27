@@ -1,0 +1,13 @@
+
+set -o vi
+
+
+function cd () {
+    typeset arg=
+    case $1 in -|-L|-P) arg=$1 ; shift ;; esac
+    [ $# -gt 1 ] && {
+        builtin cd $arg "${PWD/$1/$2}"
+    } || {
+        builtin cd $arg "$@"
+    }
+}
