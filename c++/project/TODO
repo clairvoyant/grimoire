@@ -1,0 +1,9 @@
+
+
+TODO: change from C to C++.
+TODO: add doc folder and configure target.
+TODO: add test folder and configure target.
+TODO: add more lib paths folder and configure target.
+TODO: add more bin paths folder and configure target.
+TODO: add rpm target.
+TODO: add example in the doc (man  or similar).
