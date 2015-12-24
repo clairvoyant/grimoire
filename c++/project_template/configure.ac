@@ -1,6 +1,6 @@
 AC_PREREQ([2.69])
 AC_INIT([project], [0.1], [TODO@UPDATEME.com])
-AC_CONFIG_SRCDIR([src/bin/main.c])
+AC_CONFIG_SRCDIR([src/bin/main.cc])
 AC_CONFIG_HEADERS([config.h])
 AM_INIT_AUTOMAKE
 PKG_PROG_PKG_CONFIG
@@ -12,6 +12,7 @@ EXTERNAL_CFLAGS="$CFLAGS"
 AC_PROG_CPP
 AC_PROG_CC_C99
 AC_PROG_RANLIB
+AC_PROG_CXX
 
 # Reset the externally set CFLAGS after calling AC_PROG*
 CFLAGS="$EXTERNAL_CFLAGS"
@@ -54,5 +55,7 @@ AM_COND_IF(DEBUG,
 
 AC_CONFIG_FILES([Makefile
                  src/lib/Makefile
-                 src/bin/Makefile])
+                 src/bin/Makefile
+                 src/test/Makefile])
+
 AC_OUTPUT

@@ -10,5 +10,5 @@ noinst_LIBRARIES = libproject-base.a
 
 # The files to add to the library and to the source distribution
 libproject_base_a_SOURCES = \
-										     $(libproject_base_a_HEADERS) \
-										     libproject.c
+						$(libproject_base_a_HEADERS) \
+						libproject.cc
