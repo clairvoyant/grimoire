@@ -6,5 +6,7 @@ setlocal expandtab
 set nowrap
 set autoindent
 
+colorscheme evening
+
 
 set diffopt+=iwhite
