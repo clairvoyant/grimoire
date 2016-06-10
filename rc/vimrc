@@ -7,7 +7,7 @@ set nowrap
 set autoindent
 set hlsearch
 
-colorscheme evening
+colorscheme elflord
 
 
 set diffopt+=iwhite
