@@ -64,6 +64,20 @@ API
 
 ..... MODIFY add API examples ....
 
+---
+Unit Tests
+---
+
+to run all the unit test, use the unittest framework, discovering them. 
+
+   cd project_base_directory
+   python -m unittest discover
+
+To run a single unit test, then run it with the test name.
+
+   cd project_base_directory
+   python -m unittest test.test_one
+
 ----
 Todo
 ----

@@ -2,10 +2,12 @@
 
 
 import unittest
-import addmul
+
+# Tricky part, this asumes the "src" will be imported by the discover. and the file will be on an src directory.
+from   src import addmul
 
 
-class TestAddMul(unittest.TestCase):
+class test_addmul(unittest.TestCase):
     """Unit tests for add mul, an example project."""
 
     def test_basic(self):
