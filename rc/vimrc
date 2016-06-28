@@ -5,6 +5,9 @@ setlocal smarttab
 setlocal expandtab
 set nowrap
 set autoindent
+set hlsearch
+
+colorscheme elflord
 
 
 set diffopt+=iwhite
