@@ -11,8 +11,8 @@ Snippets
 
 Tips
 ----
-Remember to Launch vim and run
+Remember to update vundle after each plugin instalation. Launch vim and run
 
 ```vim
-run :PluginInstall
+:PluginInstall
 ```
