@@ -11,7 +11,8 @@ Snippets
 
 Tips
 ----
-Remember to execute Launch vim and 
-```Vim Script
+Remember to Launch vim and run
+
+```vim
 run :PluginInstall
 ```
