@@ -33,7 +33,8 @@ def getCLI(argv):
 
     parser.add_argument('--infile',  type=argparse.FileType('r'), default=sys.stdin)
     parser.add_argument('--outfile', type=argparse.FileType('w'), default=sys.stdout)
-
+    parser.add_argument('--interval', type=int,                    default=10,       help="Interval between executions.")
+    
     args = parser.parse_args()
     return args
 
