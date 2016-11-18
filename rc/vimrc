@@ -11,3 +11,5 @@ colorscheme elflord
 
 
 set diffopt+=iwhite
+
+set background=dark
