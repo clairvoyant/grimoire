@@ -6,10 +6,27 @@ setlocal smarttab
 setlocal expandtab
 set nowrap
 
+" Search as typing
+set incsearch 
+" Hihghligth all searchs
 set hlsearch
 
+set background=dark
 colorscheme elflord
+set cursorline 
+
+set wildmenu    " Display autocomplete if possible
+set lazyredraw  " speed up macros, avoiding redraw if possible
+set showmatch   " Always display the () matching
+
+
+"""""""""
+" Folding
+""""""""""
+set foldenable          " enable folding
+set foldlevelstart=10   " open most folds by default
+set foldnestmax=10      " 10 nested fold max
+"nnoremap <space> za     " space open/closes folds
+
 
 set diffopt+=iwhite
-
-set background=dark
