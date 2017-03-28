@@ -1,32 +1,53 @@
+
+
+""""""""""""""""""""""""""
+" Space and tab management
+""""""""""""""""""""""""""
 filetype plugin indent on
+syntax enable
 setlocal tabstop=4
 setlocal softtabstop=4
 setlocal shiftwidth=4
 setlocal smarttab
 setlocal expandtab
+set diffopt+=iwhite
 set nowrap
 
-" Search as typing
-set incsearch 
-" Hihghligth all searchs
-set hlsearch
+""""""""""""""""""""""
+" Search
+""""""""""""""""""""""
+set incsearch    " incremental search
+set hlsearch     " Hihghligth all searchs
+set showmatch   " Always display the () matching
 
+""""""""""""""""""""""
+" Colors
+""""""""""""""""""""""
+set t_Co=256  
 set background=dark
 colorscheme elflord
 set cursorline 
 
+
+""""""""""""""""""""""
+" Optimizations
+""""""""""""""""""""""
 set wildmenu    " Display autocomplete if possible
 set lazyredraw  " speed up macros, avoiding redraw if possible
-set showmatch   " Always display the () matching
 
 
-"""""""""
+
+"""""""""""""""""""""""
 " Folding
-""""""""""
+""""""""""""""""""""""""""
 set foldenable          " enable folding
 set foldlevelstart=10   " open most folds by default
 set foldnestmax=10      " 10 nested fold max
 "nnoremap <space> za     " space open/closes folds
 
+""""""""""""""""""""""""""""""""""
+" Keymaps to improve productivity
+""""""""""""""""""""""""""""""""""
+map <F12> :qa<CR> 
+map <F9> :make<CR> 
 
-set diffopt+=iwhite
