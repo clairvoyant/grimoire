@@ -2,3 +2,4 @@ hardstatus alwayslastline "%{.kW}%-w%{.B}%n %t%{-}%{=b kw}%?%+w%? %=%c %d/%m/%Y"
 startup_message off
 defscrollback 1024
 
+
