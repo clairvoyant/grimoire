@@ -1,22 +1,62 @@
 
 set -o vi
 
+
+#
+# Nice common alias so save typing.
+#
+alias whence='type -a'                        
+alias grep='grep --color'                     
+alias egrep='egrep --color=auto'      
+alias fgrep='fgrep --color=auto'              
+alias ls='ls -hF --color=tty'               
+alias dir='ls --color=auto --format=vertical'
+alias vdir='ls --color=auto --format=long'
+alias ll='ls -l'                              
+alias la='ls -A'                            
+
+
 export PS1='\[\e]0;\w\a\]\n\[\e[34m\]\u@\h:\[\e[34m\]\w\[\e[0m\]\n\$'
 export EDITOR=vim
 export PATH="$PATH":~/bin/
 alias vi=vim
 
+#
+# Handy to change window title from the CLI.
+#
+settitle ()
+{
+  echo -ne "\e]2;$@\a\e]1;$@\a";
+}
 
 
-SSHAGENT=/usr/bin/ssh-agent
-SSHAGENTARGS="-s"
-if [ -z "$SSH_AUTH_SOCK" -a -x "$SSHAGENT" ]; then
-   eval `$SSHAGENT $SSHAGENTARGS`
-   echo `$SSHAGENT $SSHAGENTARGS`
-   trap "kill $SSH_AGENT_PID" 0
+#
+#  SSH agent: execute only once.  
+#
+SSH_ENV=$HOME/.ssh/environment
+
+function start_agent {
+     echo "Initialising new SSH agent..."
+     /usr/bin/ssh-agent | sed 's/^echo/#echo/' > ${SSH_ENV}
+     echo succeeded
+     chmod 600 ${SSH_ENV}
+     . ${SSH_ENV} > /dev/null
+     /usr/bin/ssh-add;
+}
+
+if [ -f "${SSH_ENV}" ]; then
+     . ${SSH_ENV} > /dev/null
+     #ps ${SSH_AGENT_PID} doesn't work under cywgin
+     ps -efp ${SSH_AGENT_PID} | grep ssh-agent$ > /dev/null || {
+         start_agent;
+     }
+else
+     start_agent;
 fi
 
-
+#
+# cd to similar path
+#
 function cd () {
     typeset arg=
     case $1 in -|-L|-P) arg=$1 ; shift ;; esac
