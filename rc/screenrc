@@ -3,3 +3,7 @@ startup_message off
 defscrollback 1024
 
 
+screen -t HOST1 ssh HOST1
+
+
+
