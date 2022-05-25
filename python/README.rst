@@ -16,7 +16,7 @@ Contents
 GPU depdendencies
 =================
 
-code-block:: bash
+    code-block:: bash
     conda create -n tensorflow-gpu python=3.9
     conda activate tensorflow-gpu
     conda install -c conda-forge tensorflow==2.7.0=cuda102*
